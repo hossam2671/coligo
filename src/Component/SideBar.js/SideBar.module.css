@@ -1,0 +1,68 @@
+.sideBar{
+    min-height: 100vh;
+    background-color: #2c728c;
+    width: 15%;
+}
+.sideBar h1{
+    color: white;
+    text-align: center;
+    padding: 10px 0 60px;
+}
+.sideBar ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: white;
+}
+.sideBar ul li{
+    padding: 25px 10px 25px 40px;
+    cursor: pointer;
+}
+.sideBar ul li.active{
+    background-color: white;
+    color: #2c728c;
+}
+.sideBar ul li:hover{
+    background-color: white;
+    color: #2c728c;
+}
+.sideBar ul li i{
+    font-size: 22px;
+    width: 50px;
+}
+.sideBar ul li span{
+    font-size: 16px;
+    font-weight: normal;
+}
+@media screen and (max-width: 992px) {
+    .sideBar ul li i{
+        width: 30px;
+    }
+    .sideBar ul li{
+        padding: 25px 2px 25px 5px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .sideBar{
+        width: 20%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .sideBar ul li i {
+        display: none;
+    }
+    .sideBar{
+        width: 23%;
+    }
+}
+@media screen and (max-width: 400px) {
+    
+    .sideBar{
+        width: 25%;
+    }
+    .sideBar ul li span{
+        font-size: 13px;
+    }
+    
+}

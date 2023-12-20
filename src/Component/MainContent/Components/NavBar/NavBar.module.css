@@ -1,0 +1,80 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 25px 10px 60px;
+    align-items: center;
+}
+.navBar h3{
+    font-size: 27px;
+    color: #676b6a;
+}
+.navBar .content{
+    display: flex;
+    align-items: center;
+}
+.navBar .content input{
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #c0bdbd;
+    padding: 3px 50px;
+    margin-right: 40px;
+    background-image: url("../../../../images/Search.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 10px;
+    background-size: 20px;
+}
+
+
+.navBar .content .notify{
+    color: #2c728c;
+    position: relative;
+    margin-right: 30px;
+}
+.navBar .content .notify i{
+    font-size: 30px;
+}
+.navBar .content .notify span{
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: white;
+    background-color: #5cc1b7;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+    border: 1px solid white;
+}
+.navBar .content button{
+    background-color: #5cc1b7;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    .navBar .content input {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navBar .content .notify{
+        margin-right: 15px;
+    }
+    .navBar{
+        padding: 10px 25px 10px 20px;
+    }
+    .navBar .content .notify i{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navBar h3{
+        display: none;
+    }
+}

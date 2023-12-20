@@ -1,0 +1,68 @@
+.exam{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.exam .text{
+    width: 45%;
+    padding: 20px;
+}
+.exam .text h2{
+    font-size: 40px;
+    color: transparent;
+    background-image: linear-gradient(to right,#2c728c, #5cc1b7);
+    -webkit-background-clip: text;
+    margin-bottom: 10px;
+}
+.exam .text h4{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(101, 101, 101);
+}
+.exam .text h5{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: rgb(189, 189, 189);
+}
+.exam .text button{
+    background-color: #5cc1b7;
+    border-radius: 8px;
+}
+.exam .img{
+    width: 50%;
+}
+.exam .img img{
+    width: 100%;
+    height: 250px;
+}
+@media screen and (max-width: 900px) {
+    .exam .text{
+        width: 100%;
+        padding: 20px 40px;
+        order: 2;
+    }
+    .exam .img{
+        width: 60%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .exam .text button{
+       margin: auto;
+       display: block;
+    }
+    .exam .text h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .exam .img img{
+        width: 100%;
+        height: 150px;
+    }
+}
